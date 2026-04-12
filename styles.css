@@ -272,11 +272,56 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   border: 1px solid var(--border);
 }
 
+.quick-tickers-panel,
 .cards-panel {
   padding: 18px;
+}
+
+.ticker-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ticker-chip {
+  border: 1px solid var(--border);
+  background: #0d1530;
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 14px;
+}
+
+.ticker-chip:hover {
+  border-color: rgba(255,255,255,0.18);
+}
+
+.cards-panel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 14px;
+}
+
+.guide-panel {
+  padding: 18px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.guide-card {
+  background: #0d1530;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.guide-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 .watch-card, .journal-entry {
   background: #0d1530;

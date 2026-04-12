@@ -19,6 +19,7 @@
         <button class="nav-btn active" data-screen="scanner">Scanner</button>
         <button class="nav-btn" data-screen="watchlist">Watchlist</button>
         <button class="nav-btn" data-screen="journal">Journal</button>
+        <button class="nav-btn" data-screen="guide">How to Use</button>
       </nav>
 
       <div class="sidebar-card">
@@ -90,6 +91,13 @@
               <option value="distance">Distance to Entry</option>
             </select>
           </div>
+        </section>
+
+        <section class="panel quick-tickers-panel">
+          <div class="section-head">
+            <h3>כל הטיקרים ב-universe</h3>
+          </div>
+          <div id="tickerChips" class="ticker-chips"></div>
         </section>
 
         <section class="panel table-panel">
@@ -227,6 +235,45 @@
             <div id="journalEntries" class="journal-entries"></div>
           </section>
         </div>
+      </section>
+
+      <section id="guide" class="screen">
+        <header class="hero compact">
+          <div>
+            <p class="eyebrow">Guide</p>
+            <h2>איך להשתמש ב-Stock Selector</h2>
+            <p class="hero-copy">עמוד קצר שמסביר מה רואים, איך לסנן, ואיך להפוך shortlist להחלטה מסודרת.</p>
+          </div>
+        </header>
+
+        <section class="panel guide-panel">
+          <div class="guide-grid">
+            <article class="guide-card">
+              <h3>1. מתחילים ב-Scanner</h3>
+              <p>העמוד הראשי מדרג את כל המניות ב-universe לפי score, setup, trend ורמת סיכון.</p>
+            </article>
+            <article class="guide-card">
+              <h3>2. מסננים shortlist</h3>
+              <p>השתמש ב-search, verdict, setup ו-sort כדי לצמצם מהר למספר מניות רלוונטיות.</p>
+            </article>
+            <article class="guide-card">
+              <h3>3. פותחים מניה לעומק</h3>
+              <p>במסך הפרטים רואים price, MA150, checklist, entry zone, invalidation והסבר למה המניה קיבלה את ה-verdict.</p>
+            </article>
+            <article class="guide-card">
+              <h3>4. שומרים ל-Watchlist</h3>
+              <p>מניה טובה אבל לא ל-entry עכשיו? שמור אותה למעקב והחזר אליה בקליק.</p>
+            </article>
+            <article class="guide-card">
+              <h3>5. מתעדים ב-Journal</h3>
+              <p>הוסף thesis, entry, stop ו-notes כדי להפוך רעיון לתהליך חוזר ולא לאינטואיציה רגעית.</p>
+            </article>
+            <article class="guide-card">
+              <h3>6. בודקים אמינות דאטה</h3>
+              <p>למעלה רואים זמן עדכון, מקור ומצב ריצה, כדי לדעת אם זה snapshot חי, premarket או fallback.</p>
+            </article>
+          </div>
+        </section>
       </section>
     </main>
   </div>

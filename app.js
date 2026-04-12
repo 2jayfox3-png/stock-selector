@@ -69,6 +69,7 @@ const el = {
   navBtns: document.querySelectorAll('.nav-btn'),
   screens: document.querySelectorAll('.screen'),
   scannerTableBody: document.getElementById('scannerTableBody'),
+  tickerChips: document.getElementById('tickerChips'),
   searchInput: document.getElementById('searchInput'),
   verdictFilter: document.getElementById('verdictFilter'),
   setupFilter: document.getElementById('setupFilter'),
@@ -187,6 +188,7 @@ function showScreen(screenId) {
 function renderAll() {
   renderStats();
   renderDataStatus();
+  renderTickerChips();
   renderScanner();
   renderDetail();
   renderWatchlist();
@@ -229,6 +231,16 @@ function getFilteredStocks() {
   });
 
   return filtered;
+}
+
+function renderTickerChips() {
+  el.tickerChips.innerHTML = state.stocks.map((stock) => `
+    <button class="ticker-chip" data-ticker-chip="${stock.ticker}">${stock.ticker}</button>
+  `).join('');
+
+  el.tickerChips.querySelectorAll('[data-ticker-chip]').forEach((btn) => {
+    btn.addEventListener('click', () => openDetail(btn.dataset.tickerChip));
+  });
 }
 
 function renderScanner() {
