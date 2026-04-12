@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Stock Selector MVP</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <p class="eyebrow">Nova · MVP</p>
+        <h1>Stock Selector</h1>
+        <p class="sidebar-copy">מערכת החלטה משמעתית לבחירת מניות, עם דגש על MA150, טרנד ואיכות סטאפ.</p>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-screen="scanner">Scanner</button>
+        <button class="nav-btn" data-screen="watchlist">Watchlist</button>
+        <button class="nav-btn" data-screen="journal">Journal</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <div class="label-row">
+          <span>Universe</span>
+          <strong id="universeCount">0</strong>
+        </div>
+        <div class="label-row">
+          <span>Strong Candidates</span>
+          <strong id="strongCount">0</strong>
+        </div>
+        <div class="label-row">
+          <span>Watchlist</span>
+          <strong id="watchlistCount">0</strong>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="scanner" class="screen active">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">Scanner</p>
+            <h2>דירוג מניות לפי setup, trend ו-risk</h2>
+            <p class="hero-copy">הגרסה הזו דטרמיניסטית ופועלת על דאטה דמו, כדי לסגור UX ו-flow לפני data pipeline אמיתי.</p>
+          </div>
+          <div class="hero-actions">
+            <button id="seedDemoBtn" class="secondary-btn">Reset Demo Data</button>
+          </div>
+        </header>
+
+        <section class="panel filters-panel">
+          <div class="field-group grow">
+            <label for="searchInput">חיפוש ticker</label>
+            <input id="searchInput" type="search" placeholder="למשל NVDA" />
+          </div>
+          <div class="field-group">
+            <label for="verdictFilter">Verdict</label>
+            <select id="verdictFilter">
+              <option value="all">הכל</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="setupFilter">Setup</label>
+            <select id="setupFilter">
+              <option value="all">הכל</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="sortBy">מיון</label>
+            <select id="sortBy">
+              <option value="score">Score</option>
+              <option value="ticker">Ticker</option>
+              <option value="distance">Distance to Entry</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="panel table-panel">
+          <table>
+            <thead>
+              <tr>
+                <th>Ticker</th>
+                <th>Score</th>
+                <th>Verdict</th>
+                <th>Trend</th>
+                <th>Setup</th>
+                <th>Entry Zone</th>
+                <th>Risk</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="scannerTableBody"></tbody>
+          </table>
+        </section>
+      </section>
+
+      <section id="detail" class="screen">
+        <header class="detail-header">
+          <div>
+            <button id="backToScannerBtn" class="text-btn">← חזרה ל-Scanner</button>
+            <p class="eyebrow">Stock Detail</p>
+            <h2 id="detailTitle">-</h2>
+            <p id="detailSubtitle" class="muted">-</p>
+          </div>
+          <button id="detailWatchlistBtn" class="primary-btn">Add to Watchlist</button>
+        </header>
+
+        <div class="detail-grid">
+          <section class="panel chart-panel">
+            <div class="section-head">
+              <h3>Price + MA150</h3>
+              <span id="detailPriceBadge" class="price-badge">-</span>
+            </div>
+            <canvas id="chartCanvas" width="900" height="280"></canvas>
+          </section>
+
+          <section class="panel summary-panel">
+            <div class="score-ring" id="detailScoreRing">
+              <span id="detailScore">0</span>
+            </div>
+            <div class="summary-copy">
+              <p class="muted">Verdict</p>
+              <h3 id="detailVerdict">-</h3>
+              <p id="detailExplanation">-</p>
+            </div>
+          </section>
+
+          <section class="panel metrics-panel">
+            <div class="metric-card"><span>Trend</span><strong id="metricTrend">-</strong></div>
+            <div class="metric-card"><span>MA150</span><strong id="metricMA150">-</strong></div>
+            <div class="metric-card"><span>Setup</span><strong id="metricSetup">-</strong></div>
+            <div class="metric-card"><span>RS</span><strong id="metricRS">-</strong></div>
+            <div class="metric-card"><span>Entry</span><strong id="metricEntry">-</strong></div>
+            <div class="metric-card"><span>Invalidation</span><strong id="metricInvalidation">-</strong></div>
+          </section>
+
+          <section class="panel notes-panel">
+            <div class="section-head">
+              <h3>Setup breakdown</h3>
+            </div>
+            <ul id="detailChecklist" class="checklist"></ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="watchlist" class="screen">
+        <header class="hero compact">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2>מניות שמורות למעקב</h2>
+          </div>
+        </header>
+        <section class="panel cards-panel" id="watchlistCards"></section>
+      </section>
+
+      <section id="journal" class="screen">
+        <header class="hero compact">
+          <div>
+            <p class="eyebrow">Journal</p>
+            <h2>לוג setup קצר ומהיר</h2>
+          </div>
+        </header>
+
+        <div class="journal-layout">
+          <section class="panel journal-form-panel">
+            <div class="section-head">
+              <h3>New Entry</h3>
+            </div>
+            <form id="journalForm">
+              <div class="field-group">
+                <label for="journalTicker">Ticker</label>
+                <select id="journalTicker"></select>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="journalSetup">Setup</label>
+                  <input id="journalSetup" type="text" placeholder="Pullback in uptrend" />
+                </div>
+                <div class="field-group">
+                  <label for="journalOutcome">Outcome</label>
+                  <input id="journalOutcome" type="text" placeholder="Pending / Win / Loss" />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="journalEntry">Planned entry</label>
+                  <input id="journalEntry" type="text" placeholder="184-188" />
+                </div>
+                <div class="field-group">
+                  <label for="journalStop">Planned stop</label>
+                  <input id="journalStop" type="text" placeholder="176" />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="journalThesis">Thesis</label>
+                <textarea id="journalThesis" rows="3" placeholder="למה בכלל זה setup ראוי?"></textarea>
+              </div>
+              <div class="field-group">
+                <label for="journalNotes">Notes</label>
+                <textarea id="journalNotes" rows="3" placeholder="מעקב, שיפור, טעויות"></textarea>
+              </div>
+              <button type="submit" class="primary-btn full-width">Save Entry</button>
+            </form>
+          </section>
+
+          <section class="panel journal-list-panel">
+            <div class="section-head">
+              <h3>Recent Entries</h3>
+            </div>
+            <div id="journalEntries" class="journal-entries"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
