@@ -76,6 +76,9 @@ const el = {
   universeCount: document.getElementById('universeCount'),
   strongCount: document.getElementById('strongCount'),
   watchlistCount: document.getElementById('watchlistCount'),
+  statusGeneratedAt: document.getElementById('statusGeneratedAt'),
+  statusSource: document.getElementById('statusSource'),
+  statusMode: document.getElementById('statusMode'),
   detailTitle: document.getElementById('detailTitle'),
   detailSubtitle: document.getElementById('detailSubtitle'),
   detailWatchlistBtn: document.getElementById('detailWatchlistBtn'),
@@ -183,10 +186,21 @@ function showScreen(screenId) {
 
 function renderAll() {
   renderStats();
+  renderDataStatus();
   renderScanner();
   renderDetail();
   renderWatchlist();
   renderJournal();
+}
+
+function renderDataStatus() {
+  const generatedAt = state.dataMeta?.generatedAt ? formatDate(state.dataMeta.generatedAt) : 'Demo / unavailable';
+  const source = state.dataMeta?.source || 'Fallback demo data';
+  const mode = state.dataMeta?.reportMode || 'demo';
+
+  el.statusGeneratedAt.textContent = generatedAt;
+  el.statusSource.textContent = source;
+  el.statusMode.textContent = mode;
 }
 
 function renderStats() {
@@ -253,7 +267,9 @@ function renderDetail() {
   if (!stock) return;
 
   el.detailTitle.textContent = `${stock.ticker} · ${stock.setup}`;
-  el.detailSubtitle.textContent = state.dataMeta?.generatedAt ? `Live snapshot · ${formatDate(state.dataMeta.generatedAt)}` : stock.trend;
+  el.detailSubtitle.textContent = state.dataMeta?.generatedAt
+    ? `${state.dataMeta?.reportMode || 'live'} · ${formatDate(state.dataMeta.generatedAt)}`
+    : stock.trend;
   el.detailPriceBadge.textContent = stock.price ? `$${stock.price}` : '—';
   el.detailScore.textContent = stock.score ?? '—';
   el.detailVerdict.textContent = stock.verdict;

@@ -116,12 +116,34 @@ h3 { margin-bottom: 10px; font-size: 18px; }
 .hero.compact { margin-bottom: 18px; }
 .hero-actions { display: flex; gap: 12px; }
 
+.status-panel,
 .filters-panel {
   padding: 18px;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
   margin-bottom: 18px;
+}
+
+.status-item {
+  min-width: 180px;
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #0d1530;
+  border: 1px solid var(--border);
+}
+
+.status-item span {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.status-item strong {
+  display: block;
+  color: var(--text);
+  line-height: 1.4;
 }
 
 .field-group {

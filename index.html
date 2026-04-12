@@ -43,12 +43,27 @@
           <div>
             <p class="eyebrow">Scanner</p>
             <h2>דירוג מניות לפי setup, trend ו-risk</h2>
-            <p class="hero-copy">הגרסה הזו דטרמיניסטית ופועלת על דאטה דמו, כדי לסגור UX ו-flow לפני data pipeline אמיתי.</p>
+            <p class="hero-copy">Stock Selector רץ על snapshot חי כשהוא זמין, עם שקיפות על זמן העדכון, מקור הדאטה ו-mode הריצה.</p>
           </div>
           <div class="hero-actions">
             <button id="seedDemoBtn" class="secondary-btn">Reset Demo Data</button>
           </div>
         </header>
+
+        <section class="panel status-panel">
+          <div class="status-item">
+            <span>Last update</span>
+            <strong id="statusGeneratedAt">—</strong>
+          </div>
+          <div class="status-item">
+            <span>Source</span>
+            <strong id="statusSource">—</strong>
+          </div>
+          <div class="status-item">
+            <span>Mode</span>
+            <strong id="statusMode">—</strong>
+          </div>
+        </section>
 
         <section class="panel filters-panel">
           <div class="field-group grow">
