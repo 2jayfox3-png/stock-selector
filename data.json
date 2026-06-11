@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T11:15:25.289419+03:00",
+  "generatedAt": "2026-06-11T11:15:25.699104+03:00",
   "reportMode": "premarket",
   "source": "Yahoo Finance v8 + yfinance history(prepost=True)",
   "universe": [
@@ -26,14 +26,14 @@
   "stocks": [
     {
       "ticker": "AAPL",
-      "price": 290.75,
+      "price": 291.74,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "286.4 close",
+      "invalidation": "286.3 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -43,10 +43,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.39x"
+        "volume מול ממוצע: 0.97x"
       ],
       "prices": [
-        258.59,
         266.18,
         263.16,
         269.98,
@@ -85,27 +84,28 @@
         311.23,
         307.34,
         301.54,
+        290.55,
         NaN
       ],
       "meta": {
-        "displayPct": -0.12,
+        "displayPct": 0.31,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.39
+        "volumeRatio": 0.97
       }
     },
     {
       "ticker": "AMZN",
-      "price": 243.1,
+      "price": 239.44,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "239.5 close",
+      "invalidation": "235.8 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -115,10 +115,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.01x"
+        "volume מול ממוצע: 0.94x"
       ],
       "prices": [
-        249.02,
         248.5,
         249.7,
         250.56,
@@ -157,20 +156,21 @@
         253.79,
         246.03,
         245.22,
+        244.19,
         NaN
       ],
       "meta": {
-        "displayPct": -0.32,
+        "displayPct": 1.42,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.01
+        "volumeRatio": 0.94
       }
     },
     {
       "ticker": "CRM",
-      "price": 172.71,
+      "price": 170.14,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -187,10 +187,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.98x"
+        "volume מול ממוצע: 0.68x"
       ],
       "prices": [
-        171.31,
         177.6,
         181.22,
         182.14,
@@ -229,20 +228,21 @@
         188.75,
         185.66,
         182.55,
+        175.35,
         NaN
       ],
       "meta": {
-        "displayPct": -1.31,
+        "displayPct": -0.04,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.98
+        "volumeRatio": 0.68
       }
     },
     {
       "ticker": "CVX",
-      "price": 186.56,
+      "price": 189.95,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -259,10 +259,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.71x"
+        "volume מול ממוצע: 0.81x"
       ],
       "prices": [
-        185.32,
         183.23,
         186.44,
         182.32,
@@ -301,27 +300,28 @@
         188.35,
         187.31,
         189.24,
+        186.76,
         NaN
       ],
       "meta": {
-        "displayPct": -0.51,
+        "displayPct": -0.84,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.71
+        "volumeRatio": 0.81
       }
     },
     {
       "ticker": "GOOG",
-      "price": 360.05,
+      "price": 356.11,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "352.4 close",
+      "invalidation": "350.8 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -331,10 +331,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.84x"
+        "volume מול ממוצע: 0.86x"
       ],
       "prices": [
-        330.38,
         334.27,
         332.57,
         339.2,
@@ -373,20 +372,21 @@
         369.05,
         365.54,
         361.17,
+        362.29,
         NaN
       ],
       "meta": {
-        "displayPct": -0.45,
+        "displayPct": 1.18,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.84
+        "volumeRatio": 0.86
       }
     },
     {
       "ticker": "INTC",
-      "price": 105.33,
+      "price": 110.31,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -403,10 +403,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.15x"
+        "volume מול ממוצע: 0.97x"
       ],
       "prices": [
-        63.81,
         64.94,
         68.5,
         68.5,
@@ -445,20 +444,21 @@
         111.78,
         99.17,
         110.27,
+        107.92,
         NaN
       ],
       "meta": {
-        "displayPct": -1.65,
+        "displayPct": 4.99,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.15
+        "volumeRatio": 0.97
       }
     },
     {
       "ticker": "IREN",
-      "price": 53.08,
+      "price": 53.35,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -475,10 +475,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.08x"
+        "volume מול ממוצע: 0.79x"
       ],
       "prices": [
-        47.37,
         48.82,
         47.7,
         48.12,
@@ -517,20 +516,21 @@
         61.86,
         54.35,
         59.19,
+        54.02,
         NaN
       ],
       "meta": {
-        "displayPct": -1.04,
+        "displayPct": 5.25,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.08
+        "volumeRatio": 0.79
       }
     },
     {
       "ticker": "LMT",
-      "price": 530.22,
+      "price": 525.03,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -547,10 +547,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.87x"
+        "volume מול ממוצע: 0.68x"
       ],
       "prices": [
-        607.6,
         607.13,
         603.54,
         588.34,
@@ -589,20 +588,21 @@
         519.05,
         523.76,
         520.07,
+        530.13,
         NaN
       ],
       "meta": {
-        "displayPct": -0.15,
+        "displayPct": -0.01,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.87
+        "volumeRatio": 0.68
       }
     },
     {
       "ticker": "LRCX",
-      "price": 320.62,
+      "price": 336.55,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -619,10 +619,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.54x"
+        "volume מול ממוצע: 1.40x"
       ],
       "prices": [
-        272.41,
         265.16,
         260.96,
         267.6,
@@ -661,20 +660,21 @@
         336.41,
         303.28,
         324.45,
+        327.16,
         NaN
       ],
       "meta": {
-        "displayPct": -1.42,
+        "displayPct": 6.17,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.54
+        "volumeRatio": 1.4
       }
     },
     {
       "ticker": "NOC",
-      "price": 549.5,
+      "price": 542.14,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -691,10 +691,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.82x"
+        "volume מול ממוצע: 0.61x"
       ],
       "prices": [
-        677.15,
         675.62,
         669.82,
         662.34,
@@ -733,27 +732,28 @@
         545.17,
         544.4,
         540.81,
+        548.67,
         NaN
       ],
       "meta": {
-        "displayPct": 0.04,
+        "displayPct": -1.3,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.82
+        "volumeRatio": 0.61
       }
     },
     {
       "ticker": "NVDA",
-      "price": 205.52,
+      "price": 203.34,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "202.4 close",
+      "invalidation": "198.3 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -763,10 +763,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.00x"
+        "volume מול ממוצע: 0.84x"
       ],
       "prices": [
-        196.28,
         198.64,
         198.12,
         201.45,
@@ -805,20 +804,21 @@
         218.66,
         205.1,
         208.64,
+        208.19,
         NaN
       ],
       "meta": {
-        "displayPct": -0.44,
+        "displayPct": 2.08,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.0
+        "volumeRatio": 0.84
       }
     },
     {
       "ticker": "ONDS",
-      "price": 9.51,
+      "price": 9.59,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -835,10 +835,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.74x"
+        "volume מול ממוצע: 0.44x"
       ],
       "prices": [
-        9.4,
         10.03,
         10.2,
         10.0,
@@ -877,20 +876,21 @@
         11.97,
         10.43,
         10.3,
+        9.65,
         NaN
       ],
       "meta": {
-        "displayPct": -1.35,
+        "displayPct": 3.68,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.74
+        "volumeRatio": 0.44
       }
     },
     {
       "ticker": "ORCL",
-      "price": 200.23,
+      "price": 183.39,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -898,19 +898,18 @@
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
       "invalidation": "177.9 close",
-      "riskNote": "Risk wider than ideal",
+      "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
-      "explanation": "ORCL נמצא בלי regime חזק מספיק, ה-setup מסווג כ-Failed breakout / avoid עם relative strength חלש, אבל ה-stop עדיין רחב. verdict: Avoid / Broken Trend.",
+      "explanation": "ORCL נמצא בלי regime חזק מספיק, ה-setup מסווג כ-Failed breakout / avoid עם relative strength חלש, והסיכון נשלט. verdict: Avoid / Broken Trend.",
       "checklist": [
         "מחיר מתחת ל-MA150",
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.17x"
+        "volume מול ממוצע: 1.75x"
       ],
       "prices": [
-        163.0,
         169.81,
         178.34,
         175.06,
@@ -949,27 +948,28 @@
         236.34,
         213.68,
         211.82,
+        205.81,
         NaN
       ],
       "meta": {
-        "displayPct": -2.91,
+        "displayPct": 1.39,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.17
+        "volumeRatio": 1.75
       }
     },
     {
       "ticker": "OXY",
-      "price": 56.15,
+      "price": 56.88,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "54.9 close",
+      "invalidation": "55.2 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -979,10 +979,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.02x"
+        "volume מול ממוצע: 0.83x"
       ],
       "prices": [
-        55.38,
         55.83,
         56.87,
         53.79,
@@ -1021,20 +1020,21 @@
         58.67,
         56.93,
         57.48,
+        56.55,
         NaN
       ],
       "meta": {
-        "displayPct": -1.32,
+        "displayPct": -2.05,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.02
+        "volumeRatio": 0.83
       }
     },
     {
       "ticker": "RDW",
-      "price": 15.27,
+      "price": 15.8,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -1051,10 +1051,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.13x"
+        "volume מול ממוצע: 0.50x"
       ],
       "prices": [
-        9.81,
         9.91,
         11.22,
         10.34,
@@ -1093,20 +1092,21 @@
         21.43,
         18.45,
         18.57,
+        15.75,
         NaN
       ],
       "meta": {
-        "displayPct": -1.93,
+        "displayPct": 8.95,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.13
+        "volumeRatio": 0.5
       }
     },
     {
       "ticker": "TPL",
-      "price": 386.61,
+      "price": 375.18,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -1114,19 +1114,18 @@
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
       "invalidation": "359.4 close",
-      "riskNote": "Risk wider than ideal",
+      "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
-      "explanation": "TPL נמצא בלי regime חזק מספיק, ה-setup מסווג כ-Failed breakout / avoid עם relative strength חלש, אבל ה-stop עדיין רחב. verdict: Avoid / Broken Trend.",
+      "explanation": "TPL נמצא בלי regime חזק מספיק, ה-setup מסווג כ-Failed breakout / avoid עם relative strength חלש, והסיכון נשלט. verdict: Avoid / Broken Trend.",
       "checklist": [
         "מחיר מתחת ל-MA150",
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.85x"
+        "volume מול ממוצע: 0.87x"
       ],
       "prices": [
-        411.57,
         416.66,
         425.62,
         421.93,
@@ -1165,27 +1164,28 @@
         406.73,
         389.79,
         396.14,
+        382.11,
         NaN
       ],
       "meta": {
-        "displayPct": -0.51,
-        "displayLabel": "פרי-מרקט",
+        "displayPct": -3.45,
+        "displayLabel": "כעת",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.85
+        "volumeRatio": 0.87
       }
     },
     {
       "ticker": "TSLA",
-      "price": 391.58,
+      "price": 388.75,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
       "ma150": "Below and falling",
       "setup": "Failed breakout / avoid",
       "entryZone": "N/A",
-      "invalidation": "385.7 close",
+      "invalidation": "382.3 close",
       "riskNote": "Controlled risk",
       "relativeStrength": "nan%",
       "distanceToEntry": "—",
@@ -1195,10 +1195,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.21x"
+        "volume מול ממוצע: 1.03x"
       ],
       "prices": [
-        364.2,
         391.95,
         388.9,
         400.62,
@@ -1237,20 +1236,21 @@
         418.45,
         391.0,
         408.95,
+        396.68,
         NaN
       ],
       "meta": {
-        "displayPct": -1.09,
+        "displayPct": 2.63,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.21
+        "volumeRatio": 1.03
       }
     },
     {
       "ticker": "TSM",
-      "price": 419.53,
+      "price": 417.46,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -1267,10 +1267,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 1.62x"
+        "volume מול ממוצע: 0.95x"
       ],
       "prices": [
-        379.89,
         375.1,
         363.35,
         370.5,
@@ -1309,20 +1308,21 @@
         444.92,
         415.17,
         426.8,
+        427.92,
         NaN
       ],
       "meta": {
-        "displayPct": -1.28,
+        "displayPct": 2.55,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 1.62
+        "volumeRatio": 0.95
       }
     },
     {
       "ticker": "XOM",
-      "price": 149.35,
+      "price": 150.4,
       "score": 0,
       "verdict": "Avoid / Broken Trend",
       "trend": "Broken structure",
@@ -1339,10 +1339,9 @@
         "MA150 לא עולה כרגע",
         "daily structure עדיין לא משכנע",
         "weekly trend לא מיושר",
-        "volume מול ממוצע: 0.72x"
+        "volume מול ממוצע: 0.70x"
       ],
       "prices": [
-        148.23,
         148.01,
         150.96,
         145.45,
@@ -1381,15 +1380,16 @@
         152.04,
         149.92,
         151.75,
+        148.91,
         NaN
       ],
       "meta": {
-        "displayPct": -0.07,
+        "displayPct": -1.15,
         "displayLabel": "פרי-מרקט",
         "ma50": NaN,
         "ma150": NaN,
         "distanceFromMa150Pct": NaN,
-        "volumeRatio": 0.72
+        "volumeRatio": 0.7
       }
     }
   ]
